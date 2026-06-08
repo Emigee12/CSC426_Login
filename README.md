@@ -22,16 +22,3 @@ npm start
 
 4. Open http://localhost:3000 in your browser.
 
-Deployment notes
-- This app is intentionally small and uses an in-memory user store. For production, use a real database and environment variables for secrets.
-- To deploy to Render (recommended):
-  - Create a new Web Service in Render, link the GitHub repo, and set the start command to `npm start`. Render will install dependencies automatically.
-- To deploy to Vercel: you can deploy the `public/` static part, but for the Node.js server choose a platform that supports server processes (Render, Heroku, Render is simplest).
-
-Environment variables
-- `SESSION_SECRET` — set a strong secret in production.
-
-Files
-- `server.js` — Express server
-- `public/` — front-end files
-- `package.json` — project manifest
