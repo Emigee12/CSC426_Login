@@ -1,0 +1,26 @@
+:root{--bg:#f6f8fa;--card:#ffffff;--accent:#2563eb;--accent-2:#06b6d4;--danger:#ef4444;--muted:#64748b}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif}
+body{margin:0;background:linear-gradient(180deg,#eef2ff,#f8fafc);min-height:100vh;display:flex;align-items:center;justify-content:center}
+.container{width:100%;max-width:420px;padding:16px}
+.card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 12px 40px rgba(2,6,23,.08);transition:transform .12s ease}
+.card:hover{transform:translateY(-4px)}
+h1{margin:6px 0 4px;font-size:20px;color:#0f172a}
+.subtitle{margin:0 0 14px;color:var(--muted);font-size:14px}
+.field{margin-bottom:12px}
+label{display:block;margin-bottom:6px;font-size:14px;color:#0f172a}
+input[type=text],input[type=password]{width:100%;padding:12px 12px;border:1px solid #e6e9ef;border-radius:10px;font-size:15px;transition:border-color .12s,box-shadow .12s}
+input[type=text]:focus,input[type=password]:focus{outline:none;border-color:var(--accent);box-shadow:0 6px 18px rgba(37,99,235,.06)}
+.input-group{display:flex;align-items:center;gap:8px}
+.toggle-pass{padding:8px 10px;border-radius:8px;border:1px solid #e6e9ef;background:#fff;cursor:pointer;font-size:13px}
+.toggle-pass:hover{background:#f1f5f9}
+.buttons{display:flex;gap:8px;margin-top:8px}
+.btn{padding:10px 14px;border-radius:10px;border:0;background:#eef2ff;color:#0f172a;cursor:pointer;box-shadow:0 6px 18px rgba(2,6,23,.04)}
+.btn.ghost{background:transparent;border:1px solid #e6e9ef}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff}
+.message{margin-top:12px;min-height:22px;transition:opacity .18s}
+.message.success{color:green}
+.message.error{color:var(--danger)}
+.note{margin-top:12px;color:#334155;font-size:13px}
+.error{color:var(--danger);font-size:13px;display:block;height:16px}
+.logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;margin-bottom:8px}
+@media(max-width:420px){.card{padding:18px}.logo{width:56px;height:56px}}

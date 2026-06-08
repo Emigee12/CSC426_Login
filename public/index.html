@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form id="loginForm" class="card" novalidate>
+        <div class="logo">AAUA</div>
+        <h1>Welcome back</h1>
+        <p class="subtitle">Sign in to continue to the demo app</p>
+
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" required autocomplete="username" />
+          <small class="error" id="userError"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-group">
+            <input id="password" name="password" type="password" required minlength="6" autocomplete="current-password" />
+            <button type="button" id="togglePass" aria-label="Show password" class="toggle-pass">Show</button>
+          </div>
+          <small class="error" id="passError"></small>
+        </div>
+
+        <div class="field small">
+          <label class="checkbox"><input id="remember" type="checkbox" /> Remember me</label>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="btn primary">Login</button>
+          <button type="button" id="resetBtn" class="btn ghost">Reset</button>
+        </div>
+
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+
+        <p class="note">Demo user: <strong>student</strong> / <strong>Password123</strong></p>
+      </form>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
