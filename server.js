@@ -20,12 +20,12 @@ app.use(session({
 // Simple in-memory user store (for demo only)
 // Passwords should never be stored in plain text in production. Here we hash a sample password.
 const users = {
-  'student': { username: 'student', passwordHash: '' }
+  'Admin': { username: 'Admin', passwordHash: '' }
 }
 
 async function initUsers(){
-  const hash = await bcrypt.hash('Password123', 10)
-  users['student'].passwordHash = hash
+  const hash = await bcrypt.hash('Password', 10)
+  users['Admin'].passwordHash = hash
 }
 
 // Initialize user store
